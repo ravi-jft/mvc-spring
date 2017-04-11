@@ -26,7 +26,7 @@ public class ProductServiceImpl implements ProductService{
     public void updateAllStock() {
         List<Product> allProducts = productRepository.getAllProducts();
         for(Product product : allProducts) {
-            if(product.getUnitsInStock()<500)
+            if(product.getUnitsInStock()<1001)
                 productRepository.updateStock(product.getProductId(), product.getUnitsInStock()+1000);
         }
     }

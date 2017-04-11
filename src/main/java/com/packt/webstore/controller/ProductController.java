@@ -33,16 +33,4 @@ public class ProductController {
         productService.updateAllStock();
         return "redirect:/products";
     }
-
-
-//    @RequestMapping("/products")
-//    public String list(Model model){
-//        Product iphone = new Product("P1234","iphone 6s",new BigDecimal(500));
-//        iphone.setDescription("Apple iPhone 6s smartphone with 4.00-inch 640x1136 display and 8-megapixel rear camera");
-//        iphone.setCategory("Smartphone");
-//        iphone.setManufacturer("Apple");
-//        iphone.setUnitsInStock(1000);
-//        model.addAttribute("product",iphone);
-//        return "products";
-//    }
 }
