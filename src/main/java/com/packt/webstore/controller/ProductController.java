@@ -16,15 +16,15 @@ import java.math.BigDecimal;
 @Controller
 public class ProductController {
 
-    @Autowired
-    private ProductRepository productRepository;
+//    @Autowired
+//    private ProductRepository productRepository;  //not preffered, used when service was not created
 
     @Autowired
     private ProductService productService;
 
     @RequestMapping("/products")
     public String list(Model model) {
-        model.addAttribute("products", productRepository.getAllProducts());
+        model.addAttribute("products", productService.getAllProducts());  //productController.getAllProducts()
         return "products";
     }
 

@@ -30,6 +30,13 @@ public class ProductServiceImpl implements ProductService{
                 productRepository.updateStock(product.getProductId(), product.getUnitsInStock()+1000);
         }
     }
+
+    @Override
+    public List<Product> getAllProducts() {
+        List<Product> products = productRepository.getAllProducts();
+        return products;
+    }
+
 }
 
 
