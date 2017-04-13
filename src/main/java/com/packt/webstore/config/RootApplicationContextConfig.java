@@ -35,4 +35,5 @@ public class RootApplicationContextConfig {
     public NamedParameterJdbcTemplate namedParameterJdbcTemplate(){
         return new NamedParameterJdbcTemplate(dataSource());
     }
+
 }
